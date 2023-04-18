@@ -38,6 +38,7 @@ class State:
 
     def display(self):
         # print the game state (todo Max)
+        print("Hello Tetris")
         print(self.occupied)
         print(self.active)
         pass
