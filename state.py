@@ -59,9 +59,13 @@ class State:
         board.append([])
         for i in range(0,12):
             board[count].append('-')
+            
+        for i in self.active:
+            board[i[0]+1][i[1]+1]=('█')
+                
 
         for i in board:
-            print(*i)
+            print("".join(i))
         pass
 
     def move(self,direction):
